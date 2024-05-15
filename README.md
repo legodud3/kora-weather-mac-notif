@@ -59,3 +59,7 @@ Using the Weather Union API, this script pulls data including temperature, humid
 Run the script manually to test the setup:
 ```sh
 /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 fetch-weather.py
+
+Set up cron to run every hour. You can change the frequency but I find every hour alright.
+
+0 * * * * /yourpath to python /yourpath to the fetch-weather.py file

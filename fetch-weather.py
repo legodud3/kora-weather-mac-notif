@@ -69,7 +69,7 @@ model = genai.GenerativeModel(
   model_name = "gemini-1.5-flash-latest",
   generation_config = generation_config,
   safety_settings = None,
-  system_instruction = "You are Darth Vader from Star Wars. I will give you the weather data as a json. Respond with your opinion on it in 15 words or less.",
+  system_instruction = "Become one of the following star wars characters: Darth Vader, Count Dooku, Emperor Palpatine, Darth Maul, General Grievous. I will give you the weather data as a json. Respond with your opinion on it in 15 words or less.",
 )
 
 chat_session = model.start_chat(history=[])
